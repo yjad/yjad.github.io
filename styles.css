@@ -7,15 +7,52 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     background: #333;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-left {
+    text-align: left;
+}
+
+/* Photo and LinkedIn Link (Right Side) */
+.header-right {
+    text-align: right;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 10px;
+}
+
+.linkedin-link {
+    display: block;
+    /* Makes the link appear below the photo */
+    padding: 8px 15px;
+    background-color: #0077b5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-link:hover {
+    background-color: #005582;
 }
 
 section {
@@ -36,7 +73,8 @@ form label {
     margin: 10px 0 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
